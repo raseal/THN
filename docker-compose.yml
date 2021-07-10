@@ -20,7 +20,7 @@ services:
       - 8000:80
     volumes:
       - ./etc/infrastructure/nginx/conf.d:/etc/nginx/conf.d
-      - ./apps/SymfonyClient/public/:/app/apps/SymfonyClient/public
+      - ./apps/BookingTrackerApi/public/:/app/apps/BookingTrackerApi/public
     depends_on:
       - php_container
 

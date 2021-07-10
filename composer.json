@@ -1,9 +1,9 @@
 {
-  "name": "thefoovault/sf-skeleton",
+  "name": "raseal/thn-from-skeleton",
   "autoload": {
     "psr-4": {
       "Shared\\": "src/Shared",
-      "SymfonyClient\\": "apps/SymfonyClient/src",
+      "BookingTrackerApi\\": "apps/BookingTrackerApi/src",
       "BookingTracker\\": "src/BookingTracker"
     }
   },
