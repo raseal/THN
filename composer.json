@@ -31,7 +31,8 @@
     "doctrine/doctrine-bundle": "^2.4",
     "doctrine/doctrine-migrations-bundle": "^3.1",
     "doctrine/orm": "^2.9",
-    "symfony/proxy-manager-bridge": "^5.3"
+    "symfony/proxy-manager-bridge": "^5.3",
+    "symfony/messenger": "^5.3"
   },
   "scripts": {
     "auto-scripts": {
