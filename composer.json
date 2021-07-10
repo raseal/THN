@@ -13,11 +13,11 @@
     }
   },
   "extra": {
-    "bin-dir": "apps/SymfonyClient/bin",
-    "config-dir": "apps/SymfonyClient/config",
-    "src-dir": "apps/SymfonyClient/src",
-    "var-dir": "apps/SymfonyClient/var",
-    "public-dir": "apps/SymfonyClient/public"
+    "bin-dir": "apps/BookingTrackerApi/bin",
+    "config-dir": "apps/BookingTrackerApi/config",
+    "src-dir": "apps/BookingTrackerApi/src",
+    "var-dir": "apps/BookingTrackerApi/var",
+    "public-dir": "apps/BookingTrackerApi/public"
   },
   "require": {
     "symfony/flex": "^1.13",
