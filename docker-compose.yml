@@ -23,3 +23,34 @@ services:
       - ./apps/SymfonyClient/public/:/app/apps/SymfonyClient/public
     depends_on:
       - php_container
+
+  mysql_container:
+    image: mysql:8.0
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWD}
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWD}
+    ports:
+      - 3306:${DATABASE_PORT}
+    expose:
+      - ${DATABASE_PORT}
+    volumes:
+      - ./var/MySQL:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    links:
+      - mysql_container
+    ports:
+      - 8006:80
+    environment:
+      - PMA_HOST=mysql_container
+      - PMA_PORT=${DATABASE_PORT}
+      - PMA_USER=root
+      - PMA_PASSWORD=${DATABASE_ROOT_PASSWD}
+    depends_on:
+        - mysql_container

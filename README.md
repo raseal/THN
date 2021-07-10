@@ -1,28 +1,15 @@
-# Installation
+# Installation & usage
 Run `make build` in order to install all application dependencies (you must have Docker installed).
 
-For more commands, type `make help`
+In order to use the application you can use any of the following commands:
+- `make test`: This command will run all the unit tests
+- `make start`: This command will start the app
+- `make stop`: This command will stop the app
+- `make destroy`: This command will stop and destroy all the application containers
 
-### Enabling `xDebug` in phpStorm
-1. Go to Preferences -> PHP and select PHP 8.0 version
+For more commands, type `make help`. 
 
-2. Click on `...` to create a CLI interpreter
-   ![step_1](docs/xdebug/step1.png)
-   
-3. Create the CLI interpreter by selecting the following parameters:
-- Type: Docker compose
-- Server: `Docker`
-- Configuration files: `./docker-compose.yml`
-- Service: `php_container`  
-  ![step_2](docs/xdebug/step2.png)
-
-4. Go to Preferences -> PHP -> Debug -> Servers to create a new one:
-- Name: `DockerApp`
-- Host: `localhost` (Port and Debugger should automagically be detected)
-- Make sure you check the `Use path mappings` options
-- Map the folders to the ones that belong to the Docker container
-    - **PROJECT_DIR**: should be mapped to `app`
-    - **src**: should be mapped to `app/src`
-      ![step_3](docs/xdebug/step3.png)
-
-
+# Purpose
+(purpose of exercise)
+# How to play with this app
+(expl about the endpoints, migrations, test-cvge and git hooks)
