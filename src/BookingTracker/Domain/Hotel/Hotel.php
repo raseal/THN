@@ -13,7 +13,8 @@ final class Hotel extends AggregateRoot
         private HotelName $hotel_name,
         private HotelAddress $hotel_address,
         private HotelUrl $hotel_url,
-        private HotelAvailableRooms $available_rooms
+        private HotelAvailableRooms $available_rooms,
+        private BookingsCollection $bookings_collection
     ) {}
 
     public function hotelId(): HotelId
@@ -39,5 +40,10 @@ final class Hotel extends AggregateRoot
     public function availableRooms(): HotelAvailableRooms
     {
         return $this->available_rooms;
+    }
+
+    public function bookingsCollection(): BookingsCollection
+    {
+        return $this->bookings_collection;
     }
 }

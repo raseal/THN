@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace BookingTracker\Domain\Booking;
 
-use BookingTracker\Domain\Guest\GuestId;
-use BookingTracker\Domain\Hotel\RoomId;
+use BookingTracker\Domain\Guest\Guest;
+use BookingTracker\Domain\Hotel\Room;
 
 final class Booking
 {
     public function __construct(
         private BookingId $booking_id,
-        private RoomId $room_id,
-        private GuestId $guest_id,
+        private Room $room,
+        private Guest $guest,
         private BookingInterval $booking_interval
     ) {}
 
@@ -21,14 +21,14 @@ final class Booking
         return $this->booking_id;
     }
 
-    public function roomId(): RoomId
+    public function room(): Room
     {
-        return $this->room_id;
+        return $this->room;
     }
 
-    public function guestId(): GuestId
+    public function guest(): Guest
     {
-        return $this->guest_id;
+        return $this->guest;
     }
 
     public function bookingInterval(): BookingInterval
