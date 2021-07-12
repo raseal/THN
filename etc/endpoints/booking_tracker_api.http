@@ -4,3 +4,5 @@ GET localhost:8000/hotels/615cf276-f66c-4c6b-9c68-ba6f438f4c78
 Content-Type: application/json
 
 ###
+GET localhost:8000/hotels/88694bad-7660-4c79-9ea4-0cf80ef9f621
+Content-Type: application/json
