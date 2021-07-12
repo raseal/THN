@@ -13,7 +13,6 @@ status:
 ## build:		Start container and install packages
 build: build-container start hooks composer-install
 
-## build-container:Rebuild a container
 build-container:
 	@docker-compose up --build --force-recreate --no-deps -d
 
@@ -37,7 +36,6 @@ destroy:
 shell:
 	@docker-compose exec php_container sh
 
-## install:	Install packages
 composer-install:
 	docker-compose exec php_container composer install
 
@@ -45,7 +43,10 @@ composer-install:
 test:
 	@docker-compose exec php_container make run-tests
 
-## run-tests:	Run all tests
+## cc:		Regenerate app cache
+cc:
+	@docker-compose exec php_container php apps/BookingTrackerApi/bin/console cache:clear
+
 run-tests:
 	XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-text --exclude-group='disabled' --log-junit build/test_results/phpunit/junit.xml tests
 

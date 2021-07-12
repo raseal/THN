@@ -1,0 +1,4 @@
+hotel_retrieve_one:
+  path: /hotels/{id}
+  controller: BookingTrackerApi\Controller\BookingTracker\Hotel\RetrieveOneHotelController
+  methods: [GET]

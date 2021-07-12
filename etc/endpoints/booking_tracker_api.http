@@ -1,0 +1,6 @@
+###
+# Get one specific hotel
+GET localhost:8000/hotels/615cf276-f66c-4c6b-9c68-ba6f438f4c78
+Content-Type: application/json
+
+###

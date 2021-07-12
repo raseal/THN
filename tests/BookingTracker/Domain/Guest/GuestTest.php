@@ -8,6 +8,7 @@ use BookingTracker\Domain\Guest\Guest;
 use BookingTracker\Domain\Guest\GuestEmail;
 use BookingTracker\Domain\Guest\GuestFullName;
 use BookingTracker\Domain\Guest\GuestId;
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 class GuestTest extends TestCase
@@ -24,5 +25,17 @@ class GuestTest extends TestCase
         self::assertTrue($guest->guestId()->equals($id));
         self::assertTrue($guest->fullName()->equals($fullname));
         self::assertTrue($guest->email()->equals($email));
+    }
+
+    /** @test */
+    public function it_should_throw_an_exception_on_invalid_email(): void
+    {
+        $this->expectException(InvalidArgumentException::class);
+
+        $id = GuestId::random();
+        $fullname = new GuestFullName('Mr. Bad Email');
+        $email = new GuestEmail('i dunno what an email is');
+
+        new Guest($id, $fullname, $email);
     }
 }
