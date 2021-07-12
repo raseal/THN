@@ -42,4 +42,7 @@
             <directory suffix=".php">src/BookingTracker/Infrastructure</directory>
         </exclude>
     </coverage>
+    <extensions>
+        <extension class="Test\ByPassFinalHook" />
+    </extensions>
 </phpunit>
