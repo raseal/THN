@@ -32,7 +32,7 @@ Sure! The app has a PHPMyAdmin service running at http://localhost:8006, feel fr
 Since the technical test is very solution-open, I chose to create an API REST with only one endpoint (using the GET verb because we are requesting data from the server).
 
 I used Symfony as framework but in a decoupled way: you'll find all the framework data in its own folder (`apps/BookingTrackerApi`), and 
-I chose `Messenger` as a command bus in order to connect the Symfony controllers and the `src` folder.
+I chose `Messenger` as a bus in order to connect the Symfony controllers and the `src` folder.
 
 As for the `src` folder, I decided to create two different contexts:
 - `Shared`: here I placed all the repetitive classes that are used in the other contexts (e.g., primitive Value Objects, Collections...)
