@@ -43,6 +43,6 @@
         </exclude>
     </coverage>
     <extensions>
-        <extension class="Test\ByPassFinalHook" />
+        <extension class="Test\BypassFinalHook" />
     </extensions>
 </phpunit>
