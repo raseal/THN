@@ -11,7 +11,7 @@ status:
 	@docker-compose ps
 
 ## build:		Start container and install packages
-build: build-container start hooks composer-install
+build: build-container start hooks composer-install mimi
 
 build-container:
 	@docker-compose up --build --force-recreate --no-deps -d
@@ -53,3 +53,6 @@ run-tests:
 hooks:
 	rm -rf .git/hooks
 	ln -s ../docs/git/hooks-docker .git/hooks
+
+mimi:
+	@docker-compose exec php_container php apps/BookingTrackerApi/bin/console  doctrine:migrations:migrate --no-interaction
