@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BookingTracker\Application\Hotel;
+namespace BookingTracker\Application\Hotel\FindAll;
 
+use BookingTracker\Application\Hotel\HotelsCollectionResponse;
 use Shared\Domain\Bus\Query\QueryHandler;
 
 final class FindAllHotelsQueryHandler implements QueryHandler

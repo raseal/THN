@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BookingTracker\Application\Hotel;
+namespace BookingTracker\Application\Hotel\FindOne;
 
+use BookingTracker\Application\Hotel\HotelResponse;
 use BookingTracker\Domain\Hotel\HotelId;
 use Shared\Domain\Bus\Query\QueryHandler;
 

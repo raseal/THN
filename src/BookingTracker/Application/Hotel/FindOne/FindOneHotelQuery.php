@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BookingTracker\Application\Hotel;
+namespace BookingTracker\Application\Hotel\FindOne;
 
 use Shared\Domain\Bus\Query\Query;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Test\BookingTracker\Domain\Hotel;
+namespace Test\BookingTracker\Domain\Hotel\Room;
 
 use BookingTracker\Domain\Hotel\HotelId;
 use BookingTracker\Domain\Hotel\Room\InvalidRoomType;

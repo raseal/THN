@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Test\BookingTracker\Application\Hotel;
+namespace Test\BookingTracker\Application\Hotel\FindOne;
 
-use BookingTracker\Application\Hotel\FindOneHotelQuery;
-use BookingTracker\Application\Hotel\FindOneHotelQueryHandler;
-use BookingTracker\Application\Hotel\FindOneHotelService;
+use BookingTracker\Application\Hotel\FindOne\FindOneHotelQuery;
+use BookingTracker\Application\Hotel\FindOne\FindOneHotelQueryHandler;
+use BookingTracker\Application\Hotel\FindOne\FindOneHotelService;
 use BookingTracker\Domain\Hotel\HotelId;
 use PHPUnit\Framework\TestCase;
 use Test\BookingTracker\FakeHotel;

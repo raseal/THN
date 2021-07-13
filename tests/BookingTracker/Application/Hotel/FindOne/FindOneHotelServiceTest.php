@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Test\BookingTracker\Application\Hotel;
+namespace Test\BookingTracker\Application\Hotel\FindOne;
 
-use BookingTracker\Application\Hotel\FindOneHotelService;
+use BookingTracker\Application\Hotel\FindOne\FindOneHotelService;
 use BookingTracker\Domain\Hotel\HotelDoesNotExist;
 use BookingTracker\Domain\Hotel\HotelId;
 use BookingTracker\Domain\Hotel\HotelReadModel;

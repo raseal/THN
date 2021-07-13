@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BookingTracker\Application\Hotel;
+namespace BookingTracker\Application\Hotel\FindAll;
 
 use BookingTracker\Domain\Hotel\HotelReadModel;
 use BookingTracker\Domain\Hotel\HotelsCollection;
