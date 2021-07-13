@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BookingTrackerApi\Controller\BookingTracker\Hotel;
 
-use BookingTracker\Application\Hotel\FindOneHotelQuery;
+use BookingTracker\Application\Hotel\FindOne\FindOneHotelQuery;
 use Shared\Infrastructure\Symfony\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Throwable;

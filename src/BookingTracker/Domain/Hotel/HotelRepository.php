@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BookingTracker\Domain\Hotel;
 
-interface HotelReadModel
+interface HotelRepository
 {
     public function findById(HotelId $hotel_id): ?Hotel;
 

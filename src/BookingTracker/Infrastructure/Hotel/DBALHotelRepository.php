@@ -17,7 +17,7 @@ use BookingTracker\Domain\Hotel\HotelAddress;
 use BookingTracker\Domain\Hotel\HotelAvailableRooms;
 use BookingTracker\Domain\Hotel\HotelId;
 use BookingTracker\Domain\Hotel\HotelName;
-use BookingTracker\Domain\Hotel\HotelReadModel;
+use BookingTracker\Domain\Hotel\HotelRepository;
 use BookingTracker\Domain\Hotel\HotelsCollection;
 use BookingTracker\Domain\Hotel\HotelUrl;
 use BookingTracker\Domain\Hotel\Room\Room;
@@ -26,7 +26,7 @@ use BookingTracker\Domain\Hotel\Room\RoomType;
 use Doctrine\DBAL\Driver\Connection;
 use function current;
 
-final class DBALHotelReadModel implements HotelReadModel
+final class DBALHotelRepository implements HotelRepository
 {
     public function __construct(
         private Connection $connection
