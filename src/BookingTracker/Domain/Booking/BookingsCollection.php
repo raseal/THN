@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace BookingTracker\Domain\Hotel;
+namespace BookingTracker\Domain\Booking;
 
-use BookingTracker\Domain\Booking\Booking;
 use Shared\Domain\Aggregate\Collection;
 
 final class BookingsCollection extends Collection

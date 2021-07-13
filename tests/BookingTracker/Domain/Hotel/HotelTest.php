@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Test\BookingTracker\Domain\Hotel;
 
-use BookingTracker\Domain\Hotel\BookingsCollection;
+use BookingTracker\Domain\Booking\BookingsCollection;
 use BookingTracker\Domain\Hotel\HotelAvailableRooms;
 use BookingTracker\Domain\Hotel\Hotel;
 use BookingTracker\Domain\Hotel\HotelAddress;

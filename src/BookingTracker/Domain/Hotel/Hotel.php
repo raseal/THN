@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace BookingTracker\Domain\Hotel;
 
+use BookingTracker\Domain\Booking\BookingsCollection;
 use Shared\Domain\Aggregate\AggregateRoot;
 
 final class Hotel extends AggregateRoot

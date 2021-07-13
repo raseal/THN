@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace BookingTracker\Infrastructure\Hotel;
 
 use BookingTracker\Domain\Booking\Booking;
+use BookingTracker\Domain\Booking\BookingsCollection;
 use BookingTracker\Domain\Booking\BookingId;
 use BookingTracker\Domain\Booking\BookingInterval;
 use BookingTracker\Domain\Guest\Guest;
 use BookingTracker\Domain\Guest\GuestEmail;
 use BookingTracker\Domain\Guest\GuestFullName;
 use BookingTracker\Domain\Guest\GuestId;
-use BookingTracker\Domain\Hotel\BookingsCollection;
 use BookingTracker\Domain\Hotel\Hotel;
 use BookingTracker\Domain\Hotel\HotelAddress;
 use BookingTracker\Domain\Hotel\HotelAvailableRooms;
