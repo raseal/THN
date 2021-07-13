@@ -5,15 +5,16 @@ declare(strict_types=1);
 namespace Test\BookingTracker\Application\Hotel;
 
 use BookingTracker\Application\Hotel\FindOneHotelService;
-use BookingTracker\Domain\Hotel\Hotel;
 use BookingTracker\Domain\Hotel\HotelDoesNotExist;
 use BookingTracker\Domain\Hotel\HotelId;
 use BookingTracker\Domain\Hotel\HotelReadModel;
 use PHPUnit\Framework\TestCase;
+use Test\BookingTracker\FakeHotel;
 
 class FindOneHotelServiceTest extends TestCase
 {
     private HotelReadModel $hotel_read_model;
+    private HotelId $hotel_id;
 
     public function setUp(): void
     {
@@ -24,7 +25,7 @@ class FindOneHotelServiceTest extends TestCase
     /** @test */
     public function it_should_find_an_hotel(): void
     {
-        $hotel = $this->createMock(Hotel::class);
+        $hotel = FakeHotel::create();
 
         $this->hotel_read_model->expects(self::once())
             ->method('findById')
