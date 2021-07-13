@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Test\BookingTracker\Domain\Hotel;
 
 use BookingTracker\Domain\Hotel\HotelId;
-use BookingTracker\Domain\Hotel\InvalidRoomType;
-use BookingTracker\Domain\Hotel\Room;
-use BookingTracker\Domain\Hotel\RoomId;
-use BookingTracker\Domain\Hotel\RoomType;
+use BookingTracker\Domain\Hotel\Room\InvalidRoomType;
+use BookingTracker\Domain\Hotel\Room\Room;
+use BookingTracker\Domain\Hotel\Room\RoomId;
+use BookingTracker\Domain\Hotel\Room\RoomType;
 use PHPUnit\Framework\TestCase;
 
 class RoomTest extends TestCase

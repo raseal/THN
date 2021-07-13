@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BookingTracker\Domain\Hotel;
+namespace BookingTracker\Domain\Hotel\Room;
 
 use Shared\Domain\DomainError;
 use function sprintf;

@@ -12,9 +12,9 @@ use BookingTracker\Domain\Guest\GuestEmail;
 use BookingTracker\Domain\Guest\GuestFullName;
 use BookingTracker\Domain\Guest\GuestId;
 use BookingTracker\Domain\Hotel\HotelId;
-use BookingTracker\Domain\Hotel\Room;
-use BookingTracker\Domain\Hotel\RoomId;
-use BookingTracker\Domain\Hotel\RoomType;
+use BookingTracker\Domain\Hotel\Room\Room;
+use BookingTracker\Domain\Hotel\Room\RoomId;
+use BookingTracker\Domain\Hotel\Room\RoomType;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 

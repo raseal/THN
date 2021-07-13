@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace BookingTracker\Domain\Booking;
 
 use BookingTracker\Domain\Guest\Guest;
-use BookingTracker\Domain\Hotel\Room;
+use BookingTracker\Domain\Hotel\Room\Room;
 
 final class Booking
 {

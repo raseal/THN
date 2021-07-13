@@ -20,9 +20,9 @@ use BookingTracker\Domain\Hotel\HotelName;
 use BookingTracker\Domain\Hotel\HotelReadModel;
 use BookingTracker\Domain\Hotel\HotelsCollection;
 use BookingTracker\Domain\Hotel\HotelUrl;
-use BookingTracker\Domain\Hotel\Room;
-use BookingTracker\Domain\Hotel\RoomId;
-use BookingTracker\Domain\Hotel\RoomType;
+use BookingTracker\Domain\Hotel\Room\Room;
+use BookingTracker\Domain\Hotel\Room\RoomId;
+use BookingTracker\Domain\Hotel\Room\RoomType;
 use Doctrine\DBAL\Driver\Connection;
 use function current;
 
