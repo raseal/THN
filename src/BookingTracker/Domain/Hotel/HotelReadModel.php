@@ -7,4 +7,6 @@ namespace BookingTracker\Domain\Hotel;
 interface HotelReadModel
 {
     public function findById(HotelId $hotel_id): ?Hotel;
+
+    public function findAll(): HotelsCollection;
 }

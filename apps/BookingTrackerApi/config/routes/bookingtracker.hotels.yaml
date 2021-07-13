@@ -2,3 +2,8 @@ hotel_retrieve_one:
   path: /hotels/{id}
   controller: BookingTrackerApi\Controller\BookingTracker\Hotel\RetrieveOneHotelController
   methods: [GET]
+
+hotel_retrieve_all:
+  path: /hotels/
+  controller: BookingTrackerApi\Controller\BookingTracker\Hotel\RetrieveAllHotelsController
+  methods: [GET]
